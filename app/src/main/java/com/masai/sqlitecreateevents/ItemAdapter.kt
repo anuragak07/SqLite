@@ -31,6 +31,13 @@ class ItemAdapter(val context: Context,val items: ArrayList<EventModelClass>):
             holder.llMain.setBackgroundColor(ContextCompat.getColor(context,R.color.white))
         }
 
+        holder.ivEdit.setOnClickListener {
+
+            if (context is MainActivity) {
+                context.updateRecordDialog(item)
+            }
+        }
+
     }
 
     override fun getItemCount(): Int {

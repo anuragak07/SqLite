@@ -109,11 +109,13 @@
             android:textStyle="bold"/>
     </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvItemList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="visible"
         tools:visibility="gone"/>
     <TextView
+        android:id="@+id/tvNoRecordsAvailable"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"

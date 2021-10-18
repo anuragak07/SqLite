@@ -1,0 +1,2 @@
+rootProject.name = "SqliteCreateEvents"
+include ':app'
